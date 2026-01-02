@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌟Ecole Globale International Girls’ School — Website
 
-## Getting Started
+A modern, SEO-optimized, and fully responsive website built with Next.js for Ecole Globale International Girls’ School.
 
-First, run the development server:
+This project was built as a technical assignment, focusing on:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- UI/UX best practices
+- performance optimization
+- scalability
+- real-world school website features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Live Preview
+- Production: https://ecole-globale-school.vercel.app/
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📸 Screenshots
+ ![alt text](image.png)  ![alt text](image-1.png) 
+ ![alt text](image-2.png)  ![alt text](image-3.png) 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Overview
+This repository contains a Next.js frontend implementing a school website with reusable components, responsive layouts, and SEO-friendly pages. The project focuses on performance, accessibility, and maintainable structure.
 
-## Learn More
+## ✨ Features
+### 🏫 Website Features
+- Responsive layouts (mobile → tablet → desktop)
+- Hero slider
+- Navigation with mobile menu
+- Team & leadership showcase
+- Accolades (Awards / Placements / Associates)
+- Instagram-style gallery
+- YouTube embeds
+- Floating WhatsApp contact button
+- Custom 404 page
+- Enquiry modal (frontend-ready)
 
-To learn more about Next.js, take a look at the following resources:
+### ⚙️ Technical Highlights
+- Next.js
+- React
+- Tailwind CSS
+- next/image for image optimization
+- Lazy loading and accessible semantic HTML
+- SEO metadata & OpenGraph tags
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
+Top-level folders and notable files:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `src/app/`
+    - `layout.jsx` — App layout
+    - `page.jsx` — Home page
+    - `not-found.jsx` — Custom 404
+    - `globals.css` — Global styles
+    - `components/` — Reusable UI components
+        - `Header.jsx`
+        - `Footer.jsx`
+        - `WhatsAppButton.jsx`
+        - `sections/` — Page sections (Hero, About, Team, Accolades, LatestUpdates, Testimonials, FAQ, Instagram)
 
-## Deploy on Vercel
+- `public/` — Static assets (logos, images, instagram, accolades folders)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Required Assets
+Place these in `public/`:
+- `instagram/` — instagram-1.jpg … instagram-8.jpg
+- `accolades/` — awards / placement logos
+- `main-logo.png`, `whatsapp.png`, `not-found-illustration.jpg`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎨 Design System
+- Primary: #1e3a8a
+- Accent: #dc2626
+- Font: Inter
+- Background: gray-50 to gray-950 gradients
+
+
+## 🚧 Notes & Roadmap
+- Instagram grid is currently static — API integration planned.
+- Contact form frontend is ready; backend integration pending.
+- Planned: TypeScript migration, CI/CD, dark mode, and breadcrumb navigation.
+
+## 👨‍💻 Author
+- Name: Shubham Nevare
+- Role: Front-End Developer
+- Location: India
+## License
+Proprietary — Ecole Globale International Girls’ School
+
+---
+## 🏁 Status
+- Production Ready — v0.1.0
+- Last Updated: January 2, 2026
