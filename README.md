@@ -13,8 +13,9 @@ This project was built as a technical assignment, focusing on:
 - Production: https://ecole-globale-school.vercel.app/
 
 ## 📸 Screenshots
- ![alt text](image.png)  ![alt text](image-1.png) 
- ![alt text](image-2.png)  ![alt text](image-3.png) 
+| ![alt](image.png) | ![alt](image-1.png) |
+| --- | --- |
+| ![alt](image-2.png) | ![alt](image-3.png) | 
 
 ## Overview
 This repository contains a Next.js frontend implementing a school website with reusable components, responsive layouts, and SEO-friendly pages. The project focuses on performance, accessibility, and maintainable structure.
