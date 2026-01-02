@@ -59,7 +59,7 @@ export default function AboutSection() {
                   {/* 16:9 Aspect Ratio */}
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+                    src="https://www.youtube.com/embed/y4JJBT0S074"
                     title="Ecole Globale International Girls' School Campus Tour"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -68,7 +68,7 @@ export default function AboutSection() {
                 </div>
 
                 {/* Video Info */}
-                <div className="bg-gradient-to-r from-gray-50 to-white p-6">
+                <div className="bg-linear-to-r from-gray-50 to-white p-6">
                   <p className="text-sm text-gray-500 mb-1">
                     Video hosted on YouTube • Ecole Globale School
                   </p>

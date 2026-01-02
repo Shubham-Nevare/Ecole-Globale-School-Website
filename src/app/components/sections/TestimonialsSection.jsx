@@ -151,11 +151,11 @@ export default function TestimonialsSection() {
           onMouseEnter={() => setIsAutoPlaying(false)}
           onMouseLeave={() => setIsAutoPlaying(true)}
         >
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 lg:gap-8">
+          <div className="flex flex-row md:flex-row items-start md:items-center justify-start gap-4 md:gap-6 lg:gap-8 overflow-x-auto snap-x snap-mandatory px-4">
             {/* Previous Testimonial (Left) */}
             <div
               className="
-                w-full md:w-1/4 bg-white p-4 md:p-6 rounded-2xl shadow-lg
+                w-72 md:w-1/4 flex-shrink-0 snap-start bg-white p-4 md:p-6 rounded-2xl shadow-lg
                 opacity-70 blur-[1px] scale-95 md:scale-90
                 transition-all duration-500 ease-out
                 min-h-[200px] md:min-h-[250px] overflow-hidden
@@ -189,7 +189,7 @@ export default function TestimonialsSection() {
             {/* Current Testimonial (Center) */}
             <div
               className="
-                w-full md:w-2/4 bg-white p-6 md:p-8 rounded-2xl shadow-2xl
+                w-80 md:w-2/4 flex-shrink-0 snap-center bg-white p-6 md:p-8 rounded-2xl shadow-2xl
                 scale-100 md:scale-105
                 transition-all duration-500 ease-out
                 min-h-[250px] md:min-h-[300px] relative
@@ -246,7 +246,7 @@ export default function TestimonialsSection() {
             {/* Next Testimonial (Right) */}
             <div
               className="
-                w-full md:w-1/4 bg-white p-4 md:p-6 rounded-2xl shadow-lg
+                w-72 md:w-1/4 flex-shrink-0 snap-start bg-white p-4 md:p-6 rounded-2xl shadow-lg
                 opacity-70 blur-[1px] scale-95 md:scale-90
                 transition-all duration-500 ease-out
                 min-h-[200px] md:min-h-[250px] overflow-hidden
