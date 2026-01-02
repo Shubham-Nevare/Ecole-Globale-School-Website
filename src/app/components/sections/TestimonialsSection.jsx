@@ -151,7 +151,7 @@ export default function TestimonialsSection() {
           onMouseEnter={() => setIsAutoPlaying(false)}
           onMouseLeave={() => setIsAutoPlaying(true)}
         >
-          <div className="flex flex-row md:flex-row items-start md:items-center justify-start gap-4 md:gap-6 lg:gap-8 overflow-x-auto snap-x snap-mandatory px-4">
+          <div className="flex flex-row md:flex-row items-start md:items-center justify-center md:justify-start gap-4 md:gap-6 lg:gap-8 overflow-x-auto snap-x snap-mandatory px-4">
             {/* Previous Testimonial (Left) */}
             <div
               className="
@@ -159,7 +159,7 @@ export default function TestimonialsSection() {
                 opacity-70 blur-[1px] scale-95 md:scale-90
                 transition-all duration-500 ease-out
                 min-h-[200px] md:min-h-[250px] overflow-hidden
-                cursor-pointer hover:opacity-80 hover:scale-97
+                cursor-pointer hover:opacity-80 hover:scale-97 hidden md:block
               "
               onClick={goToPrev}
             >
@@ -250,7 +250,7 @@ export default function TestimonialsSection() {
                 opacity-70 blur-[1px] scale-95 md:scale-90
                 transition-all duration-500 ease-out
                 min-h-[200px] md:min-h-[250px] overflow-hidden
-                cursor-pointer hover:opacity-80 hover:scale-97
+                cursor-pointer hover:opacity-80 hover:scale-97 hidden md:block
               "
               onClick={goToNext}
             >
