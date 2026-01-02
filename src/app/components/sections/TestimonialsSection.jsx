@@ -141,7 +141,7 @@ export default function TestimonialsSection() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">
           What They Say About Ecole Globale
         </h2>
-        <p className="text-center text-gray-600 mb-10">
+        <p className="text-center text-gray-600 mb-4">
           Testimonials from parents, students, and alumni
         </p>
 
@@ -151,7 +151,7 @@ export default function TestimonialsSection() {
           onMouseEnter={() => setIsAutoPlaying(false)}
           onMouseLeave={() => setIsAutoPlaying(true)}
         >
-          <div className="flex flex-row md:flex-row items-start md:items-center justify-center md:justify-start gap-4 md:gap-6 lg:gap-8 overflow-x-auto snap-x snap-mandatory px-4">
+          <div className="flex items-center justify-center gap-6 lg:gap-10 px-4 py-10">
             {/* Previous Testimonial (Left) */}
             <div
               className="
@@ -189,7 +189,7 @@ export default function TestimonialsSection() {
             {/* Current Testimonial (Center) */}
             <div
               className="
-                w-80 md:w-2/4 flex-shrink-0 snap-center bg-white p-6 md:p-8 rounded-2xl shadow-2xl
+                w-80  md:w-2/4 flex-shrink-0 snap-center bg-white p-6 md:p-8 rounded-2xl shadow-2xl
                 scale-100 md:scale-105
                 transition-all duration-500 ease-out
                 min-h-[250px] md:min-h-[300px] relative
@@ -201,7 +201,7 @@ export default function TestimonialsSection() {
               </div>
 
               <div className="flex items-start mb-4">
-              <div className="w-8 h-8 md:w-10 md:h-10 rounded-full overflow-hidden flex-shrink-0 mr-3">
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full overflow-hidden flex-shrink-0 mr-3">
                   <img
                     src={testimonials[currentIndex].photo}
                     alt={testimonials[currentIndex].name}
@@ -233,7 +233,7 @@ export default function TestimonialsSection() {
               {testimonials[currentIndex].text.length > 180 && (
                 <button
                   onClick={() => toggleExpanded(currentIndex)}
-                  className="mt-4 text-blue-700 hover:text-blue-800 font-semibold text-sm md:text-base transition-colors flex items-center gap-1 items-end"
+                  className="mt-4 text-blue-700 hover:text-blue-800 font-semibold text-sm md:text-base transition-colors flex items-center gap-1 items-end cursor-pointer"
                 >
                   {expandedStates[currentIndex] ? "Show Less" : "Read More"}
                   <span className="text-lg">
@@ -255,7 +255,7 @@ export default function TestimonialsSection() {
               onClick={goToNext}
             >
               <div className="flex items-start mb-3">
-              <div className="w-8 h-8 md:w-10 md:h-10 rounded-full overflow-hidden flex-shrink-0 mr-3">
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full overflow-hidden flex-shrink-0 mr-3">
                   <img
                     src={testimonials[nextIndex].photo}
                     alt={testimonials[nextIndex].name}
@@ -285,7 +285,7 @@ export default function TestimonialsSection() {
               absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 md:-translate-x-1/2
               bg-white shadow-lg p-2 md:p-3 rounded-full hover:bg-gray-50
               transition-all duration-300 hover:scale-110 hover:shadow-xl
-              border border-gray-200 z-10
+              border border-gray-200 z-10 cursor-pointer
             "
             aria-label="Previous testimonial"
           >
@@ -298,7 +298,7 @@ export default function TestimonialsSection() {
               absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 md:translate-x-1/2
               bg-white shadow-lg p-2 md:p-3 rounded-full hover:bg-gray-50
               transition-all duration-300 hover:scale-110 hover:shadow-xl
-              border border-gray-200 z-10
+              border border-gray-200 z-10 cursor-pointer
             "
             aria-label="Next testimonial"
           >
@@ -307,7 +307,7 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Progress Indicator */}
-        <div className="mt-10 flex flex-col items-center">
+        <div className=" flex flex-col items-center">
           {/* Manual Navigation Dots */}
           <div className="flex gap-2 mt-4">
             {testimonials.map((_, idx) => (
@@ -319,7 +319,7 @@ export default function TestimonialsSection() {
                   setTimeout(() => setIsAutoPlaying(true), 3000);
                 }}
                 className={`
-                  w-3 h-3 rounded-full transition-all duration-300
+                  w-3 h-3 rounded-full transition-all duration-300 cursor-pointer
                   ${
                     idx === currentIndex
                       ? "scale-125 bg-blue-900"
